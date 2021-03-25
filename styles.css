@@ -8,6 +8,13 @@
 .color-dark-green {
     color: #3B5948;
 }
+.color-dark-blue {
+    color: #212529;
+}
+.color-dark-blue:hover {
+    color: #212529;
+    font-weight: bold;
+}
 .bg-semi-dark {
     background-color: rgba(0,0,0,0.75);
 }
@@ -108,7 +115,7 @@
     font-size: 48px;
     color: #3B5948;
   }
-  .content .box .counter{
+  .content .box .counters{
     font-size: 50px;
     font-weight: 500;
     color: #f2f2f2;

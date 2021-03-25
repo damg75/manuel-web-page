@@ -31,3 +31,6 @@ document.getElementById("flexRadioDefaultperson").onchange = function() {
 
 current_year = document.getElementById("current-year-footer");
 current_year.innerHTML = new Date().getFullYear();
+
+current_years_working = document.getElementById("counter-years");
+current_years_working.innerHTML = new Date().getFullYear()-2006;
