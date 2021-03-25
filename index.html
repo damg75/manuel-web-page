@@ -216,45 +216,45 @@
                             <h5 class="card-title">Contacto</h5>
                             <p class="card-text">Estoy encantado de recibir su contacto, puede utilizar el formulario adyacente o los medios que dispongo abajo:</p>
                             <ul class="list-group bg-success list-group-flush">
-                                <li class="list-group-item bg-dark-blue text-white">
+                                <li class="list-group-item bg-dark-blue text-white linker">
                                     <a href="https://www.google.com.mx/maps/place/Monterrey,+N.L.,+M%C3%A9xico/@25.6297896,-100.6267804,10z/data=!4m5!3m4!1s0x86629531b437f8f5:0xa3d3d3ca6ac89894!8m2!3d25.6866142!4d-100.3161126" style="text-decoration: none;" class="text-white" target="_blank">
                                         <i class="fas fa-map-marker-alt"></i>
                                         Monterrey, Nuevo León, México
                                     </a>
                                 </li>
-                                <li class="list-group-item bg-dark-blue text-white" id="telefonos">
+                                <li class="list-group-item bg-dark-blue text-white linker" id="telefonos">
                                     <a href="https://api.whatsapp.com/send?phone=52181309170436&text=Saludos%20Cordiales%20Manuel%20" style="text-decoration: none;" class="text-white" target="_blank">
                                         <i class="fab fa-whatsapp"></i>
                                         +52 1 81 3091 7043
                                     </a>
                                 </li>
-                                <li class="list-group-item bg-dark-blue text-white">
+                                <li class="list-group-item bg-dark-blue text-white linker">
                                     <i class="fas fa-envelope-square"></i>
                                     <a href="mailto:masayqueso@gmail.com" style="text-decoration: none;" class="text-white">masayqueso@gmail.com</a>
                                 </li>
-                                <li class="list-group-item bg-dark-blue text-white" id="socialmedia">
+                                <li class="list-group-item bg-dark-blue text-white linker" id="socialmedia">
                                     <a href="https://www.linkedin.com/in/manuel-alberto-mor%C3%A1n-l%C3%A1zaro-788577207/" target="_blank" style="text-decoration: none;" class="text-white">
                                         <i class="fab fa-linkedin"></i>
                                         LinkedIn
                                     </a>
                                 </li>
-                                <li class="list-group-item bg-dark-blue text-white" id="socialmedia">
+                                <li class="list-group-item bg-dark-blue text-white linker" id="socialmedia">
                                 <a href="https://www.youtube.com/channel/UCK-CdA_fg8dhmnrBBg2An4w" target="_blank" style="text-decoration: none;" class="text-white">
                                     <i class="fab fa-youtube"></i>
                                     TunnelVision Tunnel
                                 </a>
                                 </li>
                             </ul>
-                            <div class="container planer mb-2 ">
+                            <div class="container planer mb-2 color-dark-green">
                                 <i class="far fa-paper-plane fa-5x slide-out"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-2 text-center align-self-center" >
-                    <div class="card border-5" id="formulariodecontacto" data-aos="flip-left">
+                    <div class="card h-100 bg-dark-blue shadow rounded p-3 text-left d-flex flex-column justify-content-start" id="formulariodecontacto" data-aos="flip-left">
                         <div class="card-body">
-                        <form class="row g-3"   action="https://formspree.io/f/mdopvwja" method="POST">
+                        <form class="row g-3"   action="https://formspree.io/f/xeqvjljn" method="POST">
                             <div class="col-md-6">
                             <label for="validationDefault01" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" name="Nombre" required>
@@ -284,12 +284,16 @@
                                 </label>
                             </div>
                             <div class="col-md-6">
-                            <label for="validationDefault04" class="form-label">¿Nos contacta por?</label>
-                            <select class="form-select" id="validationDefault04" name="tipo de contacto" required>
+                            <label for="validationDefault04" class="form-label">¿Me contacta por?</label>
+                            <select class="form-select" id="validationDefault04" name="Tipo de contacto" required>
                                 <option selected disabled value="">Seleccione...</option>
-                                <option>Pedido al Mayor</option>
-                                <option>Pedido al Menor</option>
-                                <option>Otro contacto</option>
+                                <option>Certificaciones</option>
+                                <option>Documentos</option>
+                                <option>Imágenes</option>
+                                <option>Manuales Técnicos</option>
+                                <option>Interpretaciones</option>       
+                                <option>Guiones</option>
+                                <option>Otro...</option>
                             </select>
                             </div>
                             <div class="col-md-12">
@@ -297,7 +301,7 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Su mensaje acá..." name="Mensaje" required></textarea>
                             </div>
                             <div class="col-12 text-center">
-                            <button class="btn btn-success button-formulaire" type="submit"><i class="far fa-paper-plane plane"></i><span class="ms-1">Enviar</span></button>
+                            <button class="btn btn-success bg-dark-green button-formulaire" style="border-color: #3B5948;" type="submit"><span class="ms-1">Enviar</span></button>
                             </div>
                         </form>
                         </div>
@@ -307,6 +311,17 @@
         </div>
     </section>
     <!-- Contactame -->
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <footer class="blog-footer text-center p-2 bg-dark mt-2 text-white">
+          <p>Copyright © <span id="current-year-footer"></span> <a href="/" class="text-success" style="text-decoration: none;">Manuel A. Morán Lázaro</a> </p>
+          <p>Todos los derechos reservados</p>
+          <p>Página corporativa realizada por <a href="https://twitter.com/damgcodes" target="_blank" class="text-success" style="text-decoration: none;">@damgcodes</a></p>
+        </footer>
+    </section>
+    <!-- Footer -->
 
 
     <!-- forTop -->
