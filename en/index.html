@@ -5,57 +5,339 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title data-i18n>Manuel A. Morán Lázaro Traductor / Intérprete</title>
+    <title>Manuel A. Morán Lázaro Translator / Interpreter</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/5c716389ef.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link rel="icon" type="image/png" href="../assets/Manuel Morán Logos (1).png" sizes="64x64">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 </head>
-<body>
+<body class="bg-dark-blue text-white">
+
+
     <!-- Header -->
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <header class="d-flex h-100 text-center text-white bg-transparent tracking-in-contract-bck">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column header-class">
+          <div class="p-2 container header-class-sub p-2 rounded">
+            <div>
+              <h3 class="float-md-start fw-bold mb-0">Manuel A. Morán Lázaro</h3>
+              <nav class="nav nav-masthead justify-content-center float-md-end">
+                    
+                <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sobre mí" class="nav-link" href="#about-me"><i class="fas fa-user-tie" aria-hidden="true"></i></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Servicios" class="nav-link" href="#services"><i class="fas fa-briefcase" aria-hidden="true"></i></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contáctame" class="nav-link" href="#contact"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <br>
+                <div class="dropdown dropper">
+                    <button class="btn btn-secondary bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-semi-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="/" style="font-weight: 700;">🇪🇸 Español</a></li>
+                        <li><a class="dropdown-item" href="../en/index.html" style="font-weight: 700;">🇬🇧 English</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                </ul>
-                <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                  </div>
+              </nav>
             </div>
+          </div>
+          <div class="container cover p-3 rounded d-flex flex-column justify-content-center">
+            <div class="container rounded cover-title p-2">
+                <h1>Manuel A. Morán Lázaro</h1>
+                <h2>Translator / Interpreter</h2>
+                <h2>This will be the English Page</h2>
             </div>
-        </nav>
+            <br>
+            <div class="container" style="width: 75%;">
+                <p class="lead">Bienvenidos a mi sitio wep personal, soy traductor español ingles especializado esta es mi página web, a sus servicios.</p>
+            </div>  
+            <p class="lead">
+              <a href="#about-me" class="btn btn-lg btn-outline-light mt-2">Sobre Mí</a>
+              <a href="#services" class="btn btn-lg btn-outline-light mt-2 ms-1">Servicios</a>
+              <a href="#contact" class="btn btn-lg btn-outline-light mt-2 ms-1">Contáctame</a>
+            </p>
+          </div>
+          <div class="container">
+          </div>
+        </div>
     </header>
     <!-- Header -->
-    <ul>
-        <li>Test</li>
-        <li>House</li>
-        <li>Boss</li>
-    </ul>
 
-    <a href="/">Spanish</a>
+
+    <!-- Sobre mí -->
+    <section id="about-me">
+        <div class="container p-2">
+            <div class="row">
+                <div class="col d-flex flex-column text-center mt-2 color-dark-green" data-aos="flip-up">
+                    <i class="fas fa-user-tie fa-4x"></i>
+                    <br>
+                    <h3>Sobre Mí</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 t-2">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="card h-100 bg-dark-blue shadow rounded p-3 text-center d-flex flex-column justify-content-start" style="width: 100%;" data-aos="fade-up">
+                        <div class="">
+                            <img src="../assets/manolito.jpeg" class="card-img-top rounded-circle border-5 border card-image" alt="Card Pic" style=" width: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Manuel Alberto Morán Lázaro</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Traductor / Intérprete</h6>
+                            <h7 class="card-subtitle mb-2 text-muted"> <span class="language" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hi! I Speak English">🇬🇧 English</span> | <span class="language" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Hola! Hablo Español">🇪🇸 Español</span></h7>
+                            <div class="">
+                                <img src="../assets/Manuel Morán Logos.gif" class="" alt="Card Pic" style=" width: 200px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2 col-md-6">
+                    <div class="card h-100 bg-dark-blue shadow rounded p-3 d-flex flex-column justify-content-center" style="width: 100%;" data-aos="fade-down">
+                        <div class="card-body text-center"><i class="fas fa-coffee fa-4x color-dark-green"></i></div>
+                        <div class="card-body text-left">
+                                <p class="card-text text-justify">
+                                Hi, I have over 15 years of experience working as a freelance translator. That's what I love to do. I have a rich background in service and hospitality, having worked in hotels such as the JW Marriott (Caracas) where I served as a Business Center Supervisor, and in franchise restaurants such a Pizza Hut, where I served as a Chief Trainer (all areas, including management) for the 4 locations they had in Caracas at that time.
+                                I also used to teach English at CVA (Caracas).
+                            </p>
+                            <p class="card-text text-justify">
+                                My freelance status has led me to work in very interesting translation projects, ranging from legal translations, to business, and even to medical and technical translations.
+                                What I most enjoy is working with scientific papers and reviews, and finally, where I most shine is translating and subtitling videos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sobre mí -->
+
+
+    <!-- Servicios -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column text-center mt-2 color-dark-green" data-aos="flip-up">
+                    <i class="fas fa-briefcase fa-4x"></i>
+                    <br>
+                    <h3>Servicios</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up">
+                    <div class="card h-100 text-white bg-dark-blue text-center p-4">
+                        <i class="fas fa-award fa-3x color-dark-green"></i>
+                        <br>
+                        <h6 class="color-dark-green">Certificaciones</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat numquam unde?</p>
+                    </div>  
+                </div>
+                <div class="col" data-aos="fade-up">
+                    <div class="card h-100 text-white bg-dark-blue text-center p-4">
+                        <i class="far fa-file-alt fa-3x color-dark-green"></i>
+                        <br>
+                        <h6 class="color-dark-green">Documentos</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore beatae nesciunt optio laudantium dolor? Consequuntur aliquam illum amet ipsa!</p>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up">
+                    <div class="card h-100 text-white bg-dark-blue text-center p-4">
+                        <i class="fas fa-images fa-3x color-dark-green"></i>
+                        <br>
+                        <h6 class="color-dark-green">Imágenes y Videos</h6>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus?</p>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-down">
+                    <div class="card h-100 text-white bg-dark-blue text-center p-4">
+                        <i class="fas fa-book-open fa-3x color-dark-green"></i>
+                        <br>
+                        <h6 class="color-dark-green">Manuales Técnicos y Corporativos</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat numquam unde?</p>
+                    </div>  
+                </div>
+                <div class="col" data-aos="fade-down">
+                    <div class="card h-100 text-white bg-dark-blue text-center p-4">
+                        <i class="fas fa-assistive-listening-systems fa-3x color-dark-green"></i>
+                        <br>
+                        <h6 class="color-dark-green">Interpretaciones</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat numquam unde?</p>
+                    </div>  
+                </div>
+                <div class="col" data-aos="fade-down">
+                    <div class="card h-100 text-white bg-dark-blue text-center p-4">
+                        <i class="fas fa-scroll fa-3x color-dark-green"></i>
+                        <br>
+                        <h6 class="color-dark-green">Guiones</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat numquam unde?</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="row counter-up">
+                <div class="content">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-history"></i></div>
+                        <div class="text">Más de</div>
+                        <div class="counters" id="counter-years">15</div>
+                        <div class="text">Años de Experiencia</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon color-dark-green"><i class="fas fa-check"></i></div>
+                        <div class="text">Más de</div>
+                        <div class="counters">200</div>
+                        <div class="text">Entregas Completadas</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <div class="text">Más de</div>
+                        <div class="counters">50</div>
+                        <div class="text">Clientes Felices</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-mug-hot"></i></div>
+                        <div class="text">Más de</div>
+                        <div class="counters">1200</div>
+                        <div class="text">Tazas de Café 😅</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Serivicio -->
+
+
+    <!-- Contactame -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column text-center mt-2 color-dark-green" data-aos="flip-up">
+                    <i class="fas fa-envelope fa-4x"></i>
+                    <br>
+                    <h3>Contáctame</h3>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6 mb-2">
+                    <div class="card h-100 bg-dark-blue shadow rounded p-3 text-left d-flex flex-column justify-content-start" data-aos="flip-right">
+                        <div class="card-body">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">Estoy encantado de recibir su contacto, puede utilizar el formulario adyacente o los medios que dispongo abajo:</p>
+                            <ul class="list-group bg-success list-group-flush">
+                                <li class="list-group-item bg-dark-blue text-white linker">
+                                    <a href="https://www.google.com.mx/maps/place/Monterrey,+N.L.,+M%C3%A9xico/@25.6297896,-100.6267804,10z/data=!4m5!3m4!1s0x86629531b437f8f5:0xa3d3d3ca6ac89894!8m2!3d25.6866142!4d-100.3161126" style="text-decoration: none;" class="text-white" target="_blank">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Monterrey, Nuevo León, México
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-dark-blue text-white linker" id="telefonos">
+                                    <a href="https://api.whatsapp.com/send?phone=52181309170436&text=Saludos%20Cordiales%20Manuel%20" style="text-decoration: none;" class="text-white" target="_blank">
+                                        <i class="fab fa-whatsapp"></i>
+                                        +52 1 81 3091 7043
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-dark-blue text-white linker">
+                                    <i class="fas fa-envelope-square"></i>
+                                    <a href="mailto:masayqueso@gmail.com" style="text-decoration: none;" class="text-white">masayqueso@gmail.com</a>
+                                </li>
+                                <li class="list-group-item bg-dark-blue text-white linker" id="socialmedia">
+                                    <a href="https://www.linkedin.com/in/manuel-alberto-mor%C3%A1n-l%C3%A1zaro-788577207/" target="_blank" style="text-decoration: none;" class="text-white">
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-dark-blue text-white linker" id="socialmedia">
+                                <a href="https://www.youtube.com/channel/UCK-CdA_fg8dhmnrBBg2An4w" target="_blank" style="text-decoration: none;" class="text-white">
+                                    <i class="fab fa-youtube"></i>
+                                    TunnelVision Tunnel
+                                </a>
+                                </li>
+                            </ul>
+                            <div class="container planer mb-2 color-dark-green">
+                                <i class="far fa-paper-plane fa-5x slide-out"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2 text-center align-self-center" >
+                    <div class="card h-100 bg-dark-blue shadow rounded p-3 text-left d-flex flex-column justify-content-start" id="formulariodecontacto" data-aos="flip-left">
+                        <div class="card-body">
+                        <form class="row g-3"   action="https://formspree.io/f/xeqvjljn" method="POST">
+                            <div class="col-md-6">
+                            <label for="validationDefault01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" name="Nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                            <label for="validationDefault02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" name="Apellido" required>
+                            </div>
+                            <div class="col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com" name="_replyto">
+                            </div>
+                            <div class="col-md-12 me-auto form-check text-start">
+                            <input class="form-check-input" type="radio" id="flexRadioDefaultbusiness" name="Empresa">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Empresa
+                            </label>
+                            </div>
+                            <div class="col-md-12" id="input_business" style="display: none;">
+                            <input type="text" class="form-control" id="input_business_input" placeholder="Empresa" name="Nombre de la Empresa">
+                            </div>
+                            <br>
+                            <div class="col-md-12 me-auto form-check text-start">
+                                <input class="form-check-input" type="radio" id="flexRadioDefaultperson" checked name="Particular">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Particular
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                            <label for="validationDefault04" class="form-label">¿Me contacta por?</label>
+                            <select class="form-select" id="validationDefault04" name="Tipo de contacto" required>
+                                <option selected disabled value="">Seleccione...</option>
+                                <option>Certificaciones</option>
+                                <option>Documentos</option>
+                                <option>Imágenes</option>
+                                <option>Manuales Técnicos</option>
+                                <option>Interpretaciones</option>       
+                                <option>Guiones</option>
+                                <option>Otro...</option>
+                            </select>
+                            </div>
+                            <div class="col-md-12">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Su mensaje acá..." name="Mensaje" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                            <button class="btn btn-success bg-dark-green button-formulaire" style="border-color: #3B5948;" type="submit"><span class="ms-1">Enviar</span></button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contactame -->
+
+
+    <!-- Footer -->
+    <br>
+    <br>
+    <section class="footer">
+        <footer class="blog-footer text-center p-2 bg-dark-green mt-2 text-white">
+          <p>Copyright © <span id="current-year-footer"></span> <a href="/" class="color-dark-blue" style="text-decoration: none;">Manuel A. Morán Lázaro</a> </p>
+          <p>Todos los derechos reservados</p>
+          <p>Página corporativa realizada por <a href="https://twitter.com/damgcodes" target="_blank" class="color-dark-blue" style="text-decoration: none;">@damgcodes</a></p>
+        </footer>
+    </section>
+    <!-- Footer -->
+
+
+    <!-- forTop -->
+    <button id="myBtn" title="ir al inicio" class="btn btn-success btn-lg bg-dark-green" style="border-color: #3B5948;">
+        <i class="fas fa-arrow-up fa-1x"></i>
+    </button>
+    <!-- forTop -->
 
 
 
@@ -64,6 +346,21 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
         <script src="../app.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.counters').counterUp({
+                delay: 10,
+                // time: 1200,
+              });
+            });
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            duration: 1500,
+            offset: 400,
+            });
+        </script>
     </section>
     <!-- Javascript -->
 </body>
