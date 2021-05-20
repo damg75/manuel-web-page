@@ -62,6 +62,9 @@
     width: 75%;
     background-color: rgba(50, 79, 58, 0.75);
 }
+.gta:hover {
+  font-weight: bold;
+}
 /* \About me */
 .card-image {
     border: 1px solid #3B5948!important;
